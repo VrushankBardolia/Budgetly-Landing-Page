@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Budgetly — Stop guessing where your money went</title>
+  <title>Budgetly</title>
   <meta name="description"
     content="Budgetly is a free, indie-built expense tracker for Android. Log spending, break it down by category, and see your month laid out like a real statement. Built solo, no bank required, no nonsense.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,9 +34,7 @@
         <a href="#security">Security</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
-        <!-- <a href="#download" class="btn btn-primary nav-mobile-cta">Get the APK</a> -->
       </div>
-      <!-- <a href="#download" class="btn btn-primary nav-cta">Get the APK</a> -->
     </div>
   </nav>
 
@@ -259,7 +257,7 @@
         <span class="eyebrow">Questions</span>
         <h2>Good to know</h2>
       </div>
-      <div class="feature-grid" style="grid-template-columns: 1fr 1fr;">
+      <div class="feature-grid" style="grid-template-columns: repeat(2, minmax(320px, 1fr));">
         <div class="feature-card">
           <h3>Is Budgetly free?</h3>
           <p>Yes, all of it. No trial, no paywall, no "premium" tier waiting behind a paywall. I built this for myself
@@ -280,168 +278,192 @@
           <p>Your data lives in your account, not just on the device. Sign in again with Google on any phone to pick up
             where you left off.</p>
         </div>
+        <div class="feature-card">
+          <h3>Does Budgetly track or share my financial data?</h3>
+          <p>Never. Budgetly does not connect to your bank accounts, sell your data, or show third-party ads. Everything
+            you log stays completely private.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Can I export my monthly spending reports?</h3>
+          <p>Yes! You can export your monthly expense summaries or custom sheet records as clean, printable PDF
+            statements anytime from the app.</p>
+        </div>
+        <div class="feature-card">
+          <h3>How does the daily safe-to-spend limit work?</h3>
+          <p>Budgetly divides your remaining monthly budget by the number of days left in the month, automatically
+            recalculating whenever you log a new expense.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Will my data stay safe when a new build is released?</h3>
+          <p>Yes! Your data is securely synced to your Google account via Firebase, so installing new APK updates will
+            never erase your spending history.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="download" class="cta-band">
     <div class="wrap">
-      <span class="eyebrow">Start your first statement</span>
+      <span class="eyebrow">Upcoming Release</span>
       <h2>Your money, laid out plainly.</h2>
-      <div class="btn-row">
-        <a href="https://github.com/YOUR_USERNAME/budgetly/releases/latest" class="btn btn-primary">Download the APK</a>
-        <a href="https://github.com/YOUR_USERNAME/budgetly" class="btn btn-gold">View on GitHub</a>
+
+      <div class="build-notice">
+        <span class="build-notice-pulse"></span>
+        <i data-lucide="rocket"></i>
+        <span>New build is on the way!</span>
       </div>
-      <p class="store-note">Android 8.0 and up · ~[XX] MB · Updated whenever I ship a fix</p>
+
+      <p class="store-note">Android 8.0 and up · Built solo · Stay tuned for the upcoming release</p>
     </div>
-    <section id="contact" class="section-tight">
-      <div class="wrap">
-        <div class="contact-card">
-          <span class="eyebrow"><i data-lucide="mail"></i> Get in touch</span>
-          <h2>Have questions, feedback, or feature ideas?</h2>
-          <p>Budgetly is actively developed and maintained solo. If you ran into a bug, have a feature suggestion, or
-            just want to talk, feel free to drop me an email.</p>
-          <a href="mailto:vrushankbardolia.dev@gmail.com" class="btn btn-primary contact-btn">
-            <i data-lucide="send"></i> vrushankbardolia.dev@gmail.com
-          </a>
+  </section>
+  <section id="contact" class="section-tight">
+    <div class="wrap">
+      <div class="contact-card">
+        <span class="eyebrow"><i data-lucide="mail"></i> Get in touch</span>
+        <h2>Have questions, feedback, or feature ideas?</h2>
+        <p>Budgetly is actively developed and maintained solo. If you ran into a bug, have a feature suggestion, or
+          just want to talk, feel free to drop me an email.</p>
+        <a href="mailto:vrushankbardolia.dev@gmail.com" class="btn btn-primary contact-btn">
+          <i data-lucide="send"></i> vrushankbardolia.dev@gmail.com
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#top" class="logo"><span class="logo-icon-bg"><img src="img/chrome_logo.png"
+                alt="Budgetly logo"></span>Budgetly</a>
+          <p>A free expense tracker built solo, for people who want their money itemized, not estimated.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Product</h5>
+          <a href="#story">Story</a>
+          <a href="#features">Features</a>
+          <a href="#security">Security</a>
+          <a href="#faq">FAQ</a>
+          <a href="https://github.com/YOUR_USERNAME/budgetly">GitHub</a>
+        </div>
+        <div class="footer-col">
+          <h5>Legal &amp; Contact</h5>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="mailto:vrushankbardolia.dev@gmail.com">Contact Developer</a>
         </div>
       </div>
-    </section>
-
-    <footer>
-      <div class="wrap">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <a href="#top" class="logo"><span class="logo-icon-bg"><img src="img/chrome_logo.png"
-                  alt="Budgetly logo"></span>Budgetly</a>
-            <p>A free expense tracker built solo, for people who want their money itemized, not estimated.</p>
-          </div>
-          <div class="footer-col">
-            <h5>Product</h5>
-            <a href="#story">Story</a>
-            <a href="#features">Features</a>
-            <a href="#security">Security</a>
-            <a href="#faq">FAQ</a>
-            <a href="https://github.com/YOUR_USERNAME/budgetly">GitHub</a>
-          </div>
-          <div class="footer-col">
-            <h5>Legal &amp; Contact</h5>
-            <a href="terms.html">Terms &amp; Conditions</a>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="mailto:vrushankbardolia.dev@gmail.com">Contact Developer</a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <span>© 2026 Budgetly. Built and maintained by one developer.</span>
-          <span>Made for people who like knowing where their money went.</span>
-        </div>
+      <div class="footer-bottom">
+        <span>© 2026 Budgetly. Built and maintained by one developer.</span>
+        <span>Made for people who like knowing where their money went.</span>
       </div>
-    </footer>
-    <script>
-      (function () {
-        var items = document.querySelectorAll('.feature-scroll-item');
-        var stickyImg = document.getElementById('featureScrollImg');
-        if (!items.length || !stickyImg) return;
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var items = document.querySelectorAll('.feature-scroll-item');
+      var stickyImg = document.getElementById('featureScrollImg');
+      if (!items.length || !stickyImg) return;
 
-        var mq = window.matchMedia('(min-width: 900px)');
-        var activeIndex = -1;
+      var mq = window.matchMedia('(min-width: 900px)');
+      var activeIndex = -1;
 
-        function setActive(index) {
-          if (activeIndex === index || index < 0 || index >= items.length) return;
-          activeIndex = index;
+      function setActive(index) {
+        if (activeIndex === index || index < 0 || index >= items.length) return;
+        activeIndex = index;
 
-          items.forEach(function (el, i) {
-            el.classList.toggle('is-active', i === index);
-          });
+        items.forEach(function (el, i) {
+          el.classList.toggle('is-active', i === index);
+        });
 
-          var targetItem = items[index];
-          var nextSrc = targetItem.getAttribute('data-image');
-          var nextAlt = targetItem.getAttribute('data-alt') || '';
-          if (stickyImg.getAttribute('src') === nextSrc) return;
+        var targetItem = items[index];
+        var nextSrc = targetItem.getAttribute('data-image');
+        var nextAlt = targetItem.getAttribute('data-alt') || '';
+        if (stickyImg.getAttribute('src') === nextSrc) return;
 
-          stickyImg.classList.add('is-swapping');
-          window.setTimeout(function () {
-            stickyImg.setAttribute('src', nextSrc);
-            stickyImg.setAttribute('alt', nextAlt);
-            stickyImg.classList.remove('is-swapping');
-          }, 150);
-        }
+        stickyImg.classList.add('is-swapping');
+        window.setTimeout(function () {
+          stickyImg.setAttribute('src', nextSrc);
+          stickyImg.setAttribute('alt', nextAlt);
+          stickyImg.classList.remove('is-swapping');
+        }, 150);
+      }
 
-        function updateOnScroll() {
-          if (!mq.matches) return;
+      function updateOnScroll() {
+        if (!mq.matches) return;
 
-          // Visible area starts below the sticky nav, so the true center
-          // of what's on screen is shifted down by half the nav height.
-          var navHeight = 76;
-          var centerY = (window.innerHeight + navHeight) / 4;
+        // Visible area starts below the sticky nav, so the true center
+        // of what's on screen is shifted down by half the nav height.
+        var navHeight = 76;
+        var centerY = (window.innerHeight + navHeight) / 4;
 
-          // Items sit flush against each other in normal flow (no gaps),
-          // so the item whose *top edge* has most recently crossed above
-          // the center line is the one currently covering it. That means
-          // we only advance to the next item once the previous item's
-          // text has fully scrolled past center — exactly the effect
-          // you want, with no early flicker from comparing bottom edges.
-          var newIndex = 0;
-          for (var i = 0; i < items.length; i++) {
-            var rect = items[i].getBoundingClientRect();
-            if (rect.top <= centerY) {
-              newIndex = i;
-            } else {
-              break;
-            }
+        // Items sit flush against each other in normal flow (no gaps),
+        // so the item whose *top edge* has most recently crossed above
+        // the center line is the one currently covering it. That means
+        // we only advance to the next item once the previous item's
+        // text has fully scrolled past center — exactly the effect
+        // you want, with no early flicker from comparing bottom edges.
+        var newIndex = 0;
+        for (var i = 0; i < items.length; i++) {
+          var rect = items[i].getBoundingClientRect();
+          if (rect.top <= centerY) {
+            newIndex = i;
+          } else {
+            break;
           }
-
-          setActive(newIndex);
         }
 
-        var ticking = false;
-        window.addEventListener('scroll', function () {
-          if (!ticking) {
-            window.requestAnimationFrame(function () {
-              updateOnScroll();
-              ticking = false;
-            });
-            ticking = true;
+        setActive(newIndex);
+      }
+
+      var ticking = false;
+      window.addEventListener('scroll', function () {
+        if (!ticking) {
+          window.requestAnimationFrame(function () {
+            updateOnScroll();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }, { passive: true });
+
+      window.addEventListener('resize', function () {
+        window.requestAnimationFrame(updateOnScroll);
+      }, { passive: true });
+
+      // Mobile Nav Toggle
+      var navToggle = document.getElementById('navToggle');
+      var navLinks = document.getElementById('navLinks');
+      if (navToggle && navLinks) {
+        navToggle.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var isOpen = navLinks.classList.toggle('is-open');
+          navToggle.classList.toggle('is-active', isOpen);
+        });
+
+        navLinks.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            navLinks.classList.remove('is-open');
+            navToggle.classList.remove('is-active');
+          });
+        });
+
+        document.addEventListener('click', function (e) {
+          if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+            navLinks.classList.remove('is-open');
+            navToggle.classList.remove('is-active');
           }
-        }, { passive: true });
+        });
+      }
 
-        window.addEventListener('resize', function () {
-          window.requestAnimationFrame(updateOnScroll);
-        }, { passive: true });
+      // Initial check on load
+      updateOnScroll();
 
-        // Mobile Nav Toggle
-        var navToggle = document.getElementById('navToggle');
-        var navLinks = document.getElementById('navLinks');
-        if (navToggle && navLinks) {
-          navToggle.addEventListener('click', function (e) {
-            e.stopPropagation();
-            var isOpen = navLinks.classList.toggle('is-open');
-            navToggle.classList.toggle('is-active', isOpen);
-          });
-
-          navLinks.querySelectorAll('a').forEach(function (link) {
-            link.addEventListener('click', function () {
-              navLinks.classList.remove('is-open');
-              navToggle.classList.remove('is-active');
-            });
-          });
-
-          document.addEventListener('click', function (e) {
-            if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
-              navLinks.classList.remove('is-open');
-              navToggle.classList.remove('is-active');
-            }
-          });
-        }
-
-        // Initial check on load
-        updateOnScroll();
-
-        if (window.lucide) {
-          lucide.createIcons();
-        }
-      })();
-    </script>
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    })();
+  </script>
 
 </body>
 
