@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budgetly — Stop guessing where your money went</title>
+  <meta name="description"
+    content="Budgetly is a free, indie-built expense tracker for Android. Log spending, break it down by category, and see your month laid out like a real statement. Built solo, no bank required, no nonsense.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600&family=Schibsted+Grotesk:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="wrap nav-row">
+      <a href="#top" class="logo"><span class="logo-icon-bg"><img src="img/chrome_logo.png"
+            alt="Budgetly logo"></span>Budgetly</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <i data-lucide="menu" class="icon-menu"></i>
+        <i data-lucide="x" class="icon-close"></i>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#story">Story</a>
+        <a href="#features">Features</a>
+        <a href="#security">Security</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <!-- <a href="#download" class="btn btn-primary nav-mobile-cta">Get the APK</a> -->
+      </div>
+      <!-- <a href="#download" class="btn btn-primary nav-cta">Get the APK</a> -->
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Built solo. Used daily. Free.</span>
+        <h1>Stop guessing where <em>it all went.</em></h1>
+        <p class="lede">Tired of clumsy spreadsheets and Notion templates? As a mobile developer, I built Budgetly to
+          track daily expenses against a monthly budget in just 2 seconds—offline, private, and 100% free.</p>
+        <div class="btn-row">
+          <a href="#download" class="btn btn-primary">Download the APK</a>
+          <a href="#features" class="btn btn-ghost">See features</a>
+        </div>
+        <p class="store-note">Free, forever · Android · No bank link, no account required to try it</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="story" class="section-tight">
+    <div class="wrap">
+      <div class="story-card">
+        <div class="story-copy">
+          <span class="eyebrow"><i data-lucide="sparkles"></i> Why I built this app</span>
+          <h2>"I was struggling to manage daily spending with spreadsheets and slow tools."</h2>
+          <p class="story-lead">
+            I tried multiple tools like Google Sheets and custom Notion templates to manage my daily expenses against my
+            monthly budget, but none of them fit my needs—either they were too slow on mobile or required too much
+            setup.
+          </p>
+          <p class="story-body">
+            As a mobile developer, I decided to build a dedicated app for myself to track money effortlessly. Budgetly
+            is designed to be fast, offline-friendly, and completely private—so logging an expense takes just 2 seconds.
+          </p>
+          <div class="story-author">
+            <div class="author-avatar">
+              <i data-lucide="code-2"></i>
+            </div>
+            <div>
+              <strong>Built solo by a mobile developer</strong>
+              <span>Created out of a personal need for daily spending clarity</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-comparison">
+          <div class="comparison-box old-way">
+            <div class="comparison-title"><i data-lucide="x-circle"></i> The Old Way</div>
+            <ul>
+              <li>Clumsy Google Sheets on phone screen</li>
+              <li>Complex Notion templates with too many clicks</li>
+              <li>Bank-linked apps requiring logins &amp; subscriptions</li>
+            </ul>
+          </div>
+          <div class="comparison-box new-way">
+            <div class="comparison-title"><i data-lucide="check-circle-2"></i> The Budgetly Way</div>
+            <ul>
+              <li>Instant 2-second keypad entry</li>
+              <li>Real-time daily safe-to-spend target</li>
+              <li>100% free, offline, and zero bank logins</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What's inside</span>
+        <h2>All your monthly expenses, clearly organized.</h2>
+        <p>Budgetly is built around the way people actually track money: quick entry, clear categories, and a dashboard
+          that tells you the truth about your month.</p>
+      </div>
+
+      <div class="feature-scroll">
+        <div class="feature-scroll-sticky">
+          <div class="feature-scroll-frame">
+            <img id="featureScrollImg" src="img/app_ss/1.png" alt="Budgetly monthly overview screen">
+          </div>
+        </div>
+
+        <div class="feature-scroll-list">
+
+          <div class="feature-scroll-item is-active" data-image="img/app_ss/1.png"
+            data-alt="Budgetly monthly overview screen showing budget, spent, remaining, and daily spending limit.">
+            <img class="feature-scroll-item-img" src="img/app_ss/1.png"
+              alt="Budgetly monthly overview screen showing budget, spent, remaining, and daily spending limit.">
+            <div class="feature-scroll-num">01 — Monthly Budget</div>
+            <h3>Set your target and stay on track.</h3>
+            <p>Set a monthly budget and instantly see your total spent, remaining balance, and a daily safe-to-spend
+              limit that updates as you log expenses. Export your monthly summary as a PDF anytime.</p>
+          </div>
+
+          <div class="feature-scroll-item" data-image="img/app_ss/2.png"
+            data-alt="Budgetly analytics dashboard showing yearly totals and top spending categories.">
+            <img class="feature-scroll-item-img" src="img/app_ss/2.png"
+              alt="Budgetly analytics dashboard showing yearly totals and top spending categories.">
+            <div class="feature-scroll-num">02 — Smart Analytics</div>
+            <h3>See where your money actually goes.</h3>
+            <p>Get a clear breakdown of your spending for the month, year, or custom lists. Budgetly automatically
+              highlights your top categories so you can understand your spending habits at a glance.</p>
+          </div>
+
+          <div class="feature-scroll-item" data-image="img/app_ss/3.png"
+            data-alt="Budgetly notification settings screen with a daily reminder toggle.">
+            <img class="feature-scroll-item-img" src="img/app_ss/3.png"
+              alt="Budgetly notification settings screen with a daily reminder toggle.">
+            <div class="feature-scroll-num">03 — Daily Reminders</div>
+            <h3>Never forget to log an expense.</h3>
+            <p>Set a quick daily notification so you remember to record what you spent before your day ends. Turn it on
+              or off anytime with a single tap.</p>
+          </div>
+
+          <div class="feature-scroll-item" data-image="img/app_ss/4.png"
+            data-alt="Budgetly categories screen with custom emoji icons and per-category totals.">
+            <img class="feature-scroll-item-img" src="img/app_ss/4.png"
+              alt="Budgetly categories screen with custom emoji icons and per-category totals.">
+            <div class="feature-scroll-num">04 — Custom Categories</div>
+            <h3>Organize spending your way.</h3>
+            <p>Create personalized categories for your lifestyle—like Food, Fuel, or Personal—complete with your
+              favorite emojis. Easily track total amounts and transaction counts for each category.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Additional Features Grid -->
+      <div style="margin-top: 96px;">
+        <div class="section-head center" style="margin-bottom: 40px;">
+          <span class="eyebrow">Everything else</span>
+          <h2>More features designed for daily clarity</h2>
+          <p>Everything you need to stay on top of your money without unnecessary bloat.</p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="file-text"></i></div>
+            <h3>PDF Reports &amp; Exports</h3>
+            <p>Export your monthly expenses into clean, printable PDF statements whenever you need physical or
+              digital records.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="layers"></i></div>
+            <h3>Multiple Custom Sheets</h3>
+            <p>Create separate expense sheets for vacations, side projects, house bills, or special trips to keep
+              money organized.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="fingerprint"></i></div>
+            <h3>Biometric App Lock</h3>
+            <p>Protect your statement with fingerprint or Face Unlock on top of your device lock screen.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="zap"></i></div>
+            <h3>Lightning Quick Entry</h3>
+            <p>Log your daily spending in seconds with a fast keypad and automatic category suggestions.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="cloud"></i></div>
+            <h3>Google Sync &amp; Backup</h3>
+            <p>Your expenses automatically sync to your Google account, so you can restore data seamlessly on a new
+              phone.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+            <h3>Zero Ads &amp; No Bank Login</h3>
+            <p>Built for total privacy. No bank logins, no ads, no subscriptions, and no tracking of your financial
+              data.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="security">
+    <div class="wrap security">
+      <div class="wrap-copy">
+        <span class="eyebrow">No bank link. That's the point.</span>
+        <h2>Your financial data stays yours.</h2>
+        <p>Budgetly never asks for your bank login — you're the one entering every number. It runs on Firebase for
+          authentication and syncing, with a lock screen standing between your statement and anyone who picks up your
+          phone.</p>
+      </div>
+      <div class="security-list">
+        <div class="security-item">
+          <div class="mark">✓</div>
+          <div>
+            <h4>Biometric app lock</h4>
+            <p>Face ID or fingerprint required to reopen the app, on top of your device lock.</p>
+          </div>
+        </div>
+        <div class="security-item">
+          <div class="mark">✓</div>
+          <div>
+            <h4>Google Sign-In</h4>
+            <p>Authentication handled by Firebase Auth — Budgetly never sees or stores your password.</p>
+          </div>
+        </div>
+        <div class="security-item">
+          <div class="mark">✓</div>
+          <div>
+            <h4>You control your data</h4>
+            <p>Export or delete your records at any time from Settings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section-tight">
+    <div class="wrap">
+      <div class="section-head center" style="margin-bottom:38px;">
+        <span class="eyebrow">Questions</span>
+        <h2>Good to know</h2>
+      </div>
+      <div class="feature-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="feature-card">
+          <h3>Is Budgetly free?</h3>
+          <p>Yes, all of it. No trial, no paywall, no "premium" tier waiting behind a paywall. I built this for myself
+            first.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Why isn't it on the Play Store?</h3>
+          <p>It's a one-person project and Play Store listings take time and money I'd rather spend building. The APK on
+            GitHub is always the latest version.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Is it safe to sideload?</h3>
+          <p>The APK is built and published by me, straight from this GitHub repo — nothing else touches it. You can
+            check the source yourself before installing if you'd like.</p>
+        </div>
+        <div class="feature-card">
+          <h3>What happens if I lose my phone?</h3>
+          <p>Your data lives in your account, not just on the device. Sign in again with Google on any phone to pick up
+            where you left off.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="cta-band">
+    <div class="wrap">
+      <span class="eyebrow">Start your first statement</span>
+      <h2>Your money, laid out plainly.</h2>
+      <div class="btn-row">
+        <a href="https://github.com/YOUR_USERNAME/budgetly/releases/latest" class="btn btn-primary">Download the APK</a>
+        <a href="https://github.com/YOUR_USERNAME/budgetly" class="btn btn-gold">View on GitHub</a>
+      </div>
+      <p class="store-note">Android 8.0 and up · ~[XX] MB · Updated whenever I ship a fix</p>
+    </div>
+    <section id="contact" class="section-tight">
+      <div class="wrap">
+        <div class="contact-card">
+          <span class="eyebrow"><i data-lucide="mail"></i> Get in touch</span>
+          <h2>Have questions, feedback, or feature ideas?</h2>
+          <p>Budgetly is actively developed and maintained solo. If you ran into a bug, have a feature suggestion, or
+            just want to talk, feel free to drop me an email.</p>
+          <a href="mailto:vrushankbardolia.dev@gmail.com" class="btn btn-primary contact-btn">
+            <i data-lucide="send"></i> vrushankbardolia.dev@gmail.com
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#top" class="logo"><span class="logo-icon-bg"><img src="img/chrome_logo.png"
+                  alt="Budgetly logo"></span>Budgetly</a>
+            <p>A free expense tracker built solo, for people who want their money itemized, not estimated.</p>
+          </div>
+          <div class="footer-col">
+            <h5>Product</h5>
+            <a href="#story">Story</a>
+            <a href="#features">Features</a>
+            <a href="#security">Security</a>
+            <a href="#faq">FAQ</a>
+            <a href="https://github.com/YOUR_USERNAME/budgetly">GitHub</a>
+          </div>
+          <div class="footer-col">
+            <h5>Legal &amp; Contact</h5>
+            <a href="terms.html">Terms &amp; Conditions</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="mailto:vrushankbardolia.dev@gmail.com">Contact Developer</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Budgetly. Built and maintained by one developer.</span>
+          <span>Made for people who like knowing where their money went.</span>
+        </div>
+      </div>
+    </footer>
+    <script>
+      (function () {
+        var items = document.querySelectorAll('.feature-scroll-item');
+        var stickyImg = document.getElementById('featureScrollImg');
+        if (!items.length || !stickyImg) return;
+
+        var mq = window.matchMedia('(min-width: 900px)');
+        var activeIndex = -1;
+
+        function setActive(index) {
+          if (activeIndex === index || index < 0 || index >= items.length) return;
+          activeIndex = index;
+
+          items.forEach(function (el, i) {
+            el.classList.toggle('is-active', i === index);
+          });
+
+          var targetItem = items[index];
+          var nextSrc = targetItem.getAttribute('data-image');
+          var nextAlt = targetItem.getAttribute('data-alt') || '';
+          if (stickyImg.getAttribute('src') === nextSrc) return;
+
+          stickyImg.classList.add('is-swapping');
+          window.setTimeout(function () {
+            stickyImg.setAttribute('src', nextSrc);
+            stickyImg.setAttribute('alt', nextAlt);
+            stickyImg.classList.remove('is-swapping');
+          }, 150);
+        }
+
+        function updateOnScroll() {
+          if (!mq.matches) return;
+
+          // Visible area starts below the sticky nav, so the true center
+          // of what's on screen is shifted down by half the nav height.
+          var navHeight = 76;
+          var centerY = (window.innerHeight + navHeight) / 4;
+
+          // Items sit flush against each other in normal flow (no gaps),
+          // so the item whose *top edge* has most recently crossed above
+          // the center line is the one currently covering it. That means
+          // we only advance to the next item once the previous item's
+          // text has fully scrolled past center — exactly the effect
+          // you want, with no early flicker from comparing bottom edges.
+          var newIndex = 0;
+          for (var i = 0; i < items.length; i++) {
+            var rect = items[i].getBoundingClientRect();
+            if (rect.top <= centerY) {
+              newIndex = i;
+            } else {
+              break;
+            }
+          }
+
+          setActive(newIndex);
+        }
+
+        var ticking = false;
+        window.addEventListener('scroll', function () {
+          if (!ticking) {
+            window.requestAnimationFrame(function () {
+              updateOnScroll();
+              ticking = false;
+            });
+            ticking = true;
+          }
+        }, { passive: true });
+
+        window.addEventListener('resize', function () {
+          window.requestAnimationFrame(updateOnScroll);
+        }, { passive: true });
+
+        // Mobile Nav Toggle
+        var navToggle = document.getElementById('navToggle');
+        var navLinks = document.getElementById('navLinks');
+        if (navToggle && navLinks) {
+          navToggle.addEventListener('click', function (e) {
+            e.stopPropagation();
+            var isOpen = navLinks.classList.toggle('is-open');
+            navToggle.classList.toggle('is-active', isOpen);
+          });
+
+          navLinks.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+              navLinks.classList.remove('is-open');
+              navToggle.classList.remove('is-active');
+            });
+          });
+
+          document.addEventListener('click', function (e) {
+            if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+              navLinks.classList.remove('is-open');
+              navToggle.classList.remove('is-active');
+            }
+          });
+        }
+
+        // Initial check on load
+        updateOnScroll();
+
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+      })();
+    </script>
+
+</body>
+
+</html>
