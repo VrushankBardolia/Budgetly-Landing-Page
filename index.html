@@ -10,7 +10,8 @@
   <meta name="title" content="Budgetly — Free Simple Expense Tracker &amp; Budgeting App for Android">
   <meta name="description"
     content="Budgetly is a free, indie-built expense tracker app for Android. Track daily expenses against your monthly budget, view category analytics, export PDF statements, and lock with biometric security—no bank links or subscriptions required.">
-  <meta name="keywords" content="Budgetly, expense tracker app, free budget app, android expense tracker, personal finance app, daily budget manager, offline expense tracker, monthly budget planner, budgetly apk">
+  <meta name="keywords"
+    content="Budgetly, expense tracker app, free budget app, android expense tracker, personal finance app, daily budget manager, offline expense tracker, monthly budget planner, budgetly apk">
   <meta name="author" content="Vrushank Bardolia">
   <meta name="robots" content="index, follow">
 
@@ -28,14 +29,16 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vrushankbardolia.github.io/Budgetly-Landing-Page/">
   <meta property="og:title" content="Budgetly — Free Simple Expense Tracker &amp; Budgeting App for Android">
-  <meta property="og:description" content="Stop guessing where your money went. Track daily spending, set monthly budget targets, and get a daily safe-to-spend limit. 100% free, private, and solo-built.">
+  <meta property="og:description"
+    content="Stop guessing where your money went. Track daily spending, set monthly budget targets, and get a daily safe-to-spend limit. 100% free, private, and solo-built.">
   <meta property="og:image" content="https://vrushankbardolia.github.io/Budgetly-Landing-Page/img/app_ss/1.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://vrushankbardolia.github.io/Budgetly-Landing-Page/">
   <meta name="twitter:title" content="Budgetly — Free Simple Expense Tracker &amp; Budgeting App for Android">
-  <meta name="twitter:description" content="Stop guessing where your money went. Track daily spending, set monthly budget targets, and get a daily safe-to-spend limit. 100% free, private, and solo-built.">
+  <meta name="twitter:description"
+    content="Stop guessing where your money went. Track daily spending, set monthly budget targets, and get a daily safe-to-spend limit. 100% free, private, and solo-built.">
   <meta name="twitter:image" content="https://vrushankbardolia.github.io/Budgetly-Landing-Page/img/app_ss/1.png">
 
   <!-- Fonts & Styles -->
@@ -55,6 +58,8 @@
     "name": "Budgetly",
     "operatingSystem": "Android 8.0 and up",
     "applicationCategory": "FinanceApplication",
+    "softwareVersion": "1.6",
+    "downloadUrl": "https://github.com/VrushankBardolia/budgetly/releases/download/v1.6/budgetly.v1.6.apk",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -129,6 +134,7 @@
         <a href="#features">Features</a>
         <a href="#security">Security</a>
         <a href="#faq">FAQ</a>
+        <a href="#download">Download</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -142,7 +148,8 @@
         <p class="lede">Tired of clumsy spreadsheets and Notion templates? As a mobile developer, I built Budgetly to
           track daily expenses against a monthly budget in just 2 seconds—offline, private, and 100% free.</p>
         <div class="btn-row">
-          <a href="#download" class="btn btn-primary">Download the APK</a>
+          <a href="#download" class="btn btn-primary" id="heroDownloadBtn"><i data-lucide="download"></i> Download APK
+            (v1.6)</a>
           <a href="#features" class="btn btn-ghost">See features</a>
         </div>
         <p class="store-note">Free, forever · Android · No bank link, no account required to try it</p>
@@ -398,20 +405,46 @@
     </div>
   </section>
 
-  <section id="download" class="cta-band">
+  <section id="download" class="download-section">
     <div class="wrap">
-      <span class="eyebrow">Upcoming Release</span>
-      <h2>Your money, laid out plainly.</h2>
+      <div class="download-card">
+        <div class="download-header">
+          <span class="eyebrow" id="releaseTag">Latest Release - v1.6</span>
+          <h2>Get Budgetly for <em>Android</em></h2>
+          <p class="download-subtitle">
+            Track daily expenses against your monthly budget in 2 seconds. 100% free, offline-first, and completely
+            private.
+          </p>
+        </div>
 
-      <div class="build-notice">
-        <span class="build-notice-pulse"></span>
-        <i data-lucide="rocket"></i>
-        <span>New build is on the way!</span>
+        <div class="download-actions">
+          <a id="downloadApkBtn"
+            href="https://github.com/VrushankBardolia/budgetly/releases/download/v1.6/budgetly.v1.6.apk"
+            class="btn btn-primary btn-lg download-btn" download>
+            <i data-lucide="download"></i>
+            <span>Download APK <span id="downloadVer">(v1.6)</span></span>
+          </a>
+          <a id="githubReleaseBtn" href="https://github.com/VrushankBardolia/budgetly/releases" target="_blank"
+            rel="noopener noreferrer" class="btn btn-ghost btn-lg">
+            <i data-lucide="github"></i>
+            <span>View on GitHub</span>
+          </a>
+        </div>
+
+        <div class="download-trust-row">
+          <span class="trust-badge"><i data-lucide="smartphone"></i> Android 8.0+</span>
+          <span class="trust-badge"><i data-lucide="shield-check"></i> SHA-256 Verified</span>
+          <span class="trust-badge"><i data-lucide="lock"></i> 100% Private</span>
+          <span class="trust-badge"><i data-lucide="code-2"></i> Free &amp; Open Source</span>
+        </div>
+
+        <p class="store-note">
+          Direct distribution via GitHub Releases · No ads · No bank logins · No subscriptions required
+        </p>
       </div>
-
-      <p class="store-note">Android 8.0 and up · Built solo · Stay tuned for the upcoming release</p>
     </div>
   </section>
+
   <section id="contact" class="section-tight">
     <div class="wrap">
       <div class="contact-card">
@@ -440,7 +473,9 @@
           <a href="#features">Features</a>
           <a href="#security">Security</a>
           <a href="#faq">FAQ</a>
-          <a href="https://github.com/YOUR_USERNAME/budgetly">GitHub</a>
+          <a href="#download">Download</a>
+          <a href="https://github.com/VrushankBardolia/budgetly/releases" target="_blank"
+            rel="noopener noreferrer">GitHub Releases</a>
         </div>
         <div class="footer-col">
           <h5>Legal &amp; Contact</h5>
@@ -554,6 +589,43 @@
 
       // Initial check on load
       updateOnScroll();
+
+      // Fetch latest release details from GitHub API to keep download link & version updated automatically
+      (function fetchLatestRelease() {
+        var apiUrl = 'https://api.github.com/repos/VrushankBardolia/budgetly/releases/latest';
+        fetch(apiUrl)
+          .then(function (res) {
+            if (!res.ok) throw new Error('API unavailable');
+            return res.json();
+          })
+          .then(function (data) {
+            if (!data) return;
+            var tag = data.tag_name || 'v1.6';
+            var apkAsset = data.assets && data.assets.find(function (a) {
+              return a.name && a.name.toLowerCase().endsWith('.apk');
+            });
+
+            var downloadUrl = apkAsset ? apkAsset.browser_download_url : 'https://github.com/VrushankBardolia/budgetly/releases/download/' + tag + '/budgetly.' + tag + '.apk';
+            // var sizeMb = apkAsset && apkAsset.size ? '~' + (apkAsset.size / (1024 * 1024)).toFixed(1) + ' MB' : '~68.8 MB';
+
+            var releaseTagEl = document.getElementById('releaseTag');
+            var downloadApkBtn = document.getElementById('downloadApkBtn');
+            var downloadVer = document.getElementById('downloadVer');
+            // var downloadSize = document.getElementById('downloadSize');
+            var heroDownloadBtn = document.getElementById('heroDownloadBtn');
+
+            if (downloadApkBtn) downloadApkBtn.setAttribute('href', downloadUrl);
+            if (downloadVer) downloadVer.textContent = '(' + tag + ')';
+            // if (downloadSize) downloadSize.textContent = sizeMb;
+            if (heroDownloadBtn) {
+              heroDownloadBtn.innerHTML = '<i data-lucide="download"></i> Download APK (' + tag + ')';
+            }
+            if (window.lucide) lucide.createIcons();
+          })
+          .catch(function () {
+            // Fallbacks are baked into static HTML
+          });
+      })();
 
       if (window.lucide) {
         lucide.createIcons();
