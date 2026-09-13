@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vrushankbardolia.github.io/Budgetly-Landing-Page/sitemap.xml
+Sitemap: https://app-budgetly.vercel.app/sitemap.xml

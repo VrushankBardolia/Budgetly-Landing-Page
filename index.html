@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary Meta Tags -->
-  <title>Budgetly — Free Simple Expense Tracker &amp; Budgeting App for Android</title>
-  <meta name="title" content="Budgetly — Free Simple Expense Tracker &amp; Budgeting App for Android">
+  <title>Budgetly — Free Expense Tracker &amp; Budget App for Android</title>
+  <meta name="title" content="Budgetly — Free Expense Tracker &amp; Budget App for Android">
   <meta name="description"
-    content="Budgetly is a free, indie-built expense tracker app for Android. Track daily expenses against your monthly budget, view category analytics, export PDF statements, and lock with biometric security—no bank links or subscriptions required.">
+    content="Budgetly is a free, private expense tracker for Android. Track daily spending against your monthly budget with category analytics and PDF exports.">
   <meta name="keywords"
     content="Budgetly, expense tracker app, free budget app, android expense tracker, personal finance app, daily budget manager, offline expense tracker, monthly budget planner, budgetly apk">
   <meta name="author" content="Vrushank Bardolia">
@@ -19,7 +19,7 @@
   <meta name="google-site-verification" content="google7505c1698dff8d62" />
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://vrushankbardolia.github.io/Budgetly-Landing-Page/">
+  <link rel="canonical" href="https://app-budgetly.vercel.app/">
 
   <!-- Favicon & Touch Icons -->
   <link rel="icon" type="image/png" href="img/chrome_logo.png">
@@ -27,19 +27,19 @@
 
   <!-- Open Graph / Facebook / WhatsApp -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://vrushankbardolia.github.io/Budgetly-Landing-Page/">
-  <meta property="og:title" content="Budgetly — Free Simple Expense Tracker &amp; Budgeting App for Android">
+  <meta property="og:url" content="https://app-budgetly.vercel.app/">
+  <meta property="og:title" content="Budgetly — Free Expense Tracker &amp; Budget App for Android">
   <meta property="og:description"
-    content="Stop guessing where your money went. Track daily spending, set monthly budget targets, and get a daily safe-to-spend limit. 100% free, private, and solo-built.">
-  <meta property="og:image" content="https://vrushankbardolia.github.io/Budgetly-Landing-Page/img/app_ss/1.png">
+    content="Free, private expense tracker for Android. Track daily spending against monthly budgets, view category analytics, and export PDF statements.">
+  <meta property="og:image" content="https://app-budgetly.vercel.app/img/app_ss/1.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://vrushankbardolia.github.io/Budgetly-Landing-Page/">
-  <meta name="twitter:title" content="Budgetly — Free Simple Expense Tracker &amp; Budgeting App for Android">
+  <meta name="twitter:url" content="https://app-budgetly.vercel.app/">
+  <meta name="twitter:title" content="Budgetly — Free Expense Tracker &amp; Budget App for Android">
   <meta name="twitter:description"
-    content="Stop guessing where your money went. Track daily spending, set monthly budget targets, and get a daily safe-to-spend limit. 100% free, private, and solo-built.">
-  <meta name="twitter:image" content="https://vrushankbardolia.github.io/Budgetly-Landing-Page/img/app_ss/1.png">
+    content="Free, private expense tracker for Android. Track daily spending against monthly budgets, view category analytics, and export PDF statements.">
+  <meta name="twitter:image" content="https://app-budgetly.vercel.app/img/app_ss/1.png">
 
   <!-- Fonts & Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,67 +50,109 @@
   <link rel="stylesheet" href="styles.css">
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Structured Data: Mobile Application Schema (JSON-LD) -->
+  <!-- Structured Data: Knowledge Graph (Person, SoftwareApplication, FAQPage) (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Budgetly",
-    "operatingSystem": "Android 8.0 and up",
-    "applicationCategory": "FinanceApplication",
-    "softwareVersion": "1.6",
-    "downloadUrl": "https://github.com/VrushankBardolia/budgetly/releases/download/v1.6/budgetly.v1.6.apk",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "description": "Free indie expense tracker app for Android to track daily spending, set monthly budget limits, and export PDF statements without bank linking.",
-    "author": {
-      "@type": "Person",
-      "name": "Vrushank Bardolia",
-      "email": "vrushankbardolia.dev@gmail.com"
-    }
-  }
-  </script>
-
-  <!-- Structured Data: Rich FAQ Snippets Schema (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "Is Budgetly free?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, all of it. No trial, no paywall, no premium tier waiting behind a paywall. Built solo for personal daily use."
+        "@type": "Person",
+        "@id": "https://app-budgetly.vercel.app/#developer",
+        "name": "Vrushank Bardolia",
+        "jobTitle": "Mobile App Developer",
+        "email": "vrushankbardolia.dev@gmail.com",
+        "sameAs": [
+          "https://github.com/VrushankBardolia",
+          "https://github.com/VrushankBardolia/budgetly"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://app-budgetly.vercel.app/#software",
+        "name": "Budgetly",
+        "operatingSystem": "Android 8.0 and up",
+        "applicationCategory": "FinanceApplication",
+        "softwareVersion": "1.6",
+        "downloadUrl": "https://github.com/VrushankBardolia/budgetly/releases/download/v1.6/budgetly.v1.6.apk",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "Budgetly is a free, private personal expense tracker and monthly budget planner for Android.",
+        "author": {
+          "@id": "https://app-budgetly.vercel.app/#developer"
         }
       },
       {
-        "@type": "Question",
-        "name": "Why isn't Budgetly on the Play Store?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "It is an indie one-person project. The official APK releases are distributed directly through GitHub Releases."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does Budgetly track or share my financial data?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Never. Budgetly does not connect to bank accounts, sell your data, or display third-party ads. Your data remains completely private."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I export my monthly spending reports?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes! You can export your monthly expense summaries or custom sheet records as clean, printable PDF statements anytime."
-        }
+        "@type": "FAQPage",
+        "@id": "https://app-budgetly.vercel.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Budgetly free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, all of it. No trial, no paywall, no 'premium' tier waiting behind a paywall. I built this for myself first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why isn't it on the Play Store?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It's a one-person project and Play Store listings take time and money I'd rather spend building. The APK on GitHub is always the latest version."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it safe to sideload?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The APK is built and published by me, straight from this GitHub repo — nothing else touches it. You can check the source yourself before installing if you'd like."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if I lose my phone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your data lives in your account, not just on the device. Sign in again with Google on any phone to pick up where you left off."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Budgetly track or share my financial data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Never. Budgetly does not connect to your bank accounts, sell your data, or show third-party ads. Everything you log stays completely private."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I export my monthly spending reports?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! You can export your monthly expense summaries or custom sheet records as clean, printable PDF statements anytime from the app."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the daily safe-to-spend limit work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Budgetly divides your remaining monthly budget by the number of days left in the month, automatically recalculating whenever you log a new expense."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will my data stay safe when a new build is released?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Your data is securely synced to your Google account via Firebase, so installing new APK updates will never erase your spending history."
+            }
+          }
+        ]
       }
     ]
   }
@@ -145,8 +187,9 @@
       <div class="hero-copy">
         <span class="eyebrow">Built solo. Used daily. Free.</span>
         <h1>Stop guessing where <em>it all went.</em></h1>
-        <p class="lede">Tired of clumsy spreadsheets and Notion templates? As a mobile developer, I built Budgetly to
-          track daily expenses against a monthly budget in just 2 seconds—offline, private, and 100% free.</p>
+        <p class="lede"><strong>Budgetly</strong> is a free, privacy-first expense tracker and monthly budget management
+          app for Android. Built to replace clumsy spreadsheets and Notion templates, it lets you log daily expenses and
+          stay on target in just 2 seconds—offline, private, and 100% free.</p>
         <div class="btn-row">
           <a href="#download" class="btn btn-primary" id="heroDownloadBtn"><i data-lucide="download"></i> Download APK
             (v1.6)</a>
